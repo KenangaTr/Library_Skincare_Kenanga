@@ -1,5 +1,16 @@
-import "@/styles/globals.css";
+import '../styles/globals.css';
+import { WishlistProvider } from '../context/WishlistContext';
+import Head from 'next/head';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <WishlistProvider>
+      <Head>
+        <title>GlowGuide Skincare</title>
+      </Head>
+      <Component {...pageProps} />
+    </WishlistProvider>
+  );
 }
+
+export default MyApp;
