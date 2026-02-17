@@ -7,7 +7,7 @@ import { Plus, Minus } from "lucide-react";
 const faqs = [
     {
         question: "Are your products suitable for sensitive skin?",
-        answer: "Yes! All Fabish products are dermatologically tested and formulated with gentle, natural ingredients suitable for sensitive skin types.",
+        answer: "Yes! All KennyLabs products are dermatologically tested and formulated with gentle, natural ingredients suitable for sensitive skin types.",
     },
     {
         question: "Are your products cruelty-free and vegan?",

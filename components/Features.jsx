@@ -16,7 +16,7 @@ export default function Features() {
                         <div className="h-64 rounded-[4rem] w-full overflow-hidden relative border border-white">
                             <Image
                                 src="/produk2.jpg"
-                                alt="Fabish Skincare Products"
+                                alt="KennyLabs Skincare Products"
                                 fill
                                 className="object-cover"
                             />
@@ -26,7 +26,7 @@ export default function Features() {
                         <div className="h-64 rounded-[4rem] w-full overflow-hidden relative border-4 border-white shadow-xl">
                             <Image
                                 src="/model2.jpg"
-                                alt="Fabish Skincare Model"
+                                alt="KennyLabs Skincare Model"
                                 fill
                                 className="object-cover"
                             />
@@ -36,7 +36,7 @@ export default function Features() {
                     {/* Content Side */}
                     <div>
                         <h2 className="text-4xl lg:text-5xl font-serif text-fabish-text mb-6 leading-tight">
-                            Fabish Skincare Features <br /> <span className="italic text-fabish-green">For You</span>
+                            KennyLabs Skincare Features <br /> <span className="italic text-fabish-green">For You</span>
                         </h2>
 
                         <p className="text-gray-600 mb-8 leading-relaxed font-sans">

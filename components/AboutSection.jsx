@@ -31,11 +31,11 @@ export default function AboutSection() {
                     {/* Content Side */}
                     <div>
                         <h2 className="text-4xl lg:text-5xl font-serif text-fabish-text mb-6 leading-tight">
-                            Fabish Skincare For Your <br /> <span className="italic text-fabish-green">Beautiful Skin</span>
+                            KennyLabs Skincare For Your <br /> <span className="italic text-fabish-green">Beautiful Skin</span>
                         </h2>
 
                         <p className="text-gray-600 mb-8 leading-relaxed font-sans">
-                            At Fabish Skincare, we provide personalized treatments to nourish and achieve your natural beauty. Our expert team is dedicated to helping you achieve healthy, radiant skin every day.
+                            At KennyLabs Skincare, we provide personalized treatments to nourish and achieve your natural beauty. Our expert team is dedicated to helping you achieve healthy, radiant skin every day.
                         </p>
 
                         <ul className="space-y-4 mb-8 text-sm font-medium text-gray-700">

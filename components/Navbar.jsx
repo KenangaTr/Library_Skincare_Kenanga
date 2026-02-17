@@ -9,7 +9,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center">
                         <Link href="/" className="font-serif text-3xl font-bold tracking-wide text-fabish-text flex items-center gap-2">
-                            <span>✿</span> Fabish
+                            <span>✿</span> KennyLabs
                         </Link>
                     </div>
 

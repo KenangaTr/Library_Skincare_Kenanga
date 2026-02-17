@@ -5,7 +5,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="space-y-4">
                         <h3 className="font-serif text-3xl font-bold text-fabish-text flex items-center gap-2">
-                            <span>✿</span> Fabish
+                            <span>✿</span> KennyLabs
                         </h3>
                         <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
                             As a dermatology-first brand, our skincare solutions provide stunning and fashionable apparel... wait, skincare results. Sustainable, effective, and clean.
@@ -50,7 +50,7 @@ export default function Footer() {
                 </div>
 
                 <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 font-medium">
-                    <p>© {new Date().getFullYear()} Fabish Skincare. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} KennyLabs Skincare. All rights reserved.</p>
                 </div>
             </div>
         </footer>

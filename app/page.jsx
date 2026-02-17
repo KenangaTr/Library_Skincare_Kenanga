@@ -10,7 +10,7 @@ import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-    title: "Fabish | Unlock Your Natural Glow",
+    title: "KennyLabs | Unlock Your Natural Glow",
     description: "Premium skincare solutions for a natural glow.",
 };
 

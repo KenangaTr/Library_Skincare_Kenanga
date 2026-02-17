@@ -15,8 +15,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Fabish Skincare",
-  description: "Unlock Your Natural Glow with Fabish.",
+  title: "KennyLabs Skincare",
+  description: "Unlock Your Natural Glow with KennyLabs.",
 };
 
 export default function RootLayout({ children }) {
