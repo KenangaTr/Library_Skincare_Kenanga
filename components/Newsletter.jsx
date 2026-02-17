@@ -4,6 +4,7 @@ import { useState } from "react";
 import RenderingBadge from "./RenderingBadge";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Newsletter() {
     const [email, setEmail] = useState("");
@@ -34,9 +35,9 @@ export default function Newsletter() {
                         Personalized skincare solutions for verified results.
                         Find the answer to your skincare concerns.
                     </p>
-                    <button className="bg-fabish-lime text-fabish-text px-8 py-3 rounded-full font-bold hover:bg-lime-400 transition-colors inline-block">
+                    <Link href="/shop" className="bg-[#F48FB1] text-[#0F2F18] px-8 py-3 rounded-full font-bold hover:bg-pink-400 transition-colors inline-block shadow-lg shadow-pink-200">
                         Shop Now
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Image Placeholder */}
