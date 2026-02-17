@@ -1,5 +1,6 @@
 import RenderingBadge from "./RenderingBadge";
 import { Play } from "lucide-react";
+import Image from "next/image";
 
 export default function Features() {
     return (
@@ -12,19 +13,23 @@ export default function Features() {
                     {/* Visual Side */}
                     <div className="space-y-8">
                         {/* Top Image Cluster */}
-                        <div className="h-64 rounded-[4rem] bg-fabish-green/10 w-full overflow-hidden relative border border-white">
-                            {/* Placeholder product group */}
-                            <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-6xl">🌿</div>
+                        <div className="h-64 rounded-[4rem] w-full overflow-hidden relative border border-white">
+                            <Image
+                                src="/produk2.jpg"
+                                alt="Fabish Skincare Products"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
 
-                        {/* Bottom Video Placeholder */}
-                        <div className="h-64 rounded-[4rem] bg-gray-200 w-full overflow-hidden relative group cursor-pointer border-4 border-white shadow-xl">
-                            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="w-16 h-16 bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center text-white border border-white/50">
-                                    <Play className="w-6 h-6 fill-current ml-1" />
-                                </div>
-                            </div>
+                        {/* Bottom Image - Replaces Video Placeholder */}
+                        <div className="h-64 rounded-[4rem] w-full overflow-hidden relative border-4 border-white shadow-xl">
+                            <Image
+                                src="/model2.jpg"
+                                alt="Fabish Skincare Model"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                     </div>
 
