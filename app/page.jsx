@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import StarProducts from "@/components/StarProducts";
 import CategoryGrid from "@/components/CategoryGrid";
-import AboutSection from "@/components/AboutSection";
+import Features from "@/components/Features";
 import SkinFirst from "@/components/SkinFirst";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
@@ -20,7 +20,7 @@ export default function Home() {
             <Navbar />
             <Hero />
             <CategoryGrid />
-            <AboutSection />
+            <Features />
             <StarProducts />
             <Testimonials />
             <SkinFirst />

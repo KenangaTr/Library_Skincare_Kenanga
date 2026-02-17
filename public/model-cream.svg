@@ -1,0 +1,12 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="500" fill="#E5E5E5"/>
+  <circle cx="200" cy="200" r="120" fill="#F3D1B8"/> <!-- Face -->
+  <path d="M140,140 Q200,80 260,140" fill="none" stroke="#4A3B2C" stroke-width="5"/> <!-- Hairline -->
+  <path d="M120,120 Q200,40 280,120 L280,60 Q200,-20 120,60 Z" fill="#FFFFFF"/> <!-- Towel -->
+  <circle cx="170" cy="190" r="5" fill="#4A3B2C"/> <!-- Left Eye -->
+  <circle cx="230" cy="190" r="5" fill="#4A3B2C"/> <!-- Right Eye -->
+  <path d="M190,230 Q200,240 210,230" fill="none" stroke="#C18C75" stroke-width="3"/> <!-- Nose -->
+  <path d="M180,260 Q200,280 220,260" fill="none" stroke="#D67575" stroke-width="3"/> <!-- Mouth -->
+  <!-- Cream on cheek -->
+  <ellipse cx="160" cy="220" rx="15" ry="10" fill="#FFFFFF" opacity="0.8"/>
+</svg>

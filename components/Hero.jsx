@@ -7,52 +7,60 @@ export default function Hero() {
             <RenderingBadge mode="SSG" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-                <div className="text-center mb-12 relative">
-                    <h1 className="text-5xl lg:text-9xl font-serif font-medium leading-tight tracking-tight mb-6 animate-fade-in-up relative z-20 mix-blend-overlay">
-                        Unlock Your <br />
-                        <span className="italic">Natural Glow</span>
-                    </h1>
+                <div className="text-center relative flex flex-col items-center">
+                    {/* Main Title - Layered behind image significantly */}
+                    <div className="relative z-0 mb-[-60px] lg:mb-[-140px] select-none pointer-events-none">
+                        <h1 className="text-6xl lg:text-[11rem] font-serif font-medium leading-[0.8] tracking-tighter opacity-90 text-white mix-blend-overlay">
+                            Unlock Your <br />
+                        </h1>
+                        <h1 className="text-6xl lg:text-[11rem] font-serif font-medium leading-[0.8] tracking-tighter opacity-90 text-white mix-blend-overlay italic relative left-12 lg:left-36">
+                            Natural Glow
+                        </h1>
+                    </div>
 
-                    {/* Central Oval Image */}
-                    <div className="relative mx-auto w-64 h-80 lg:w-[400px] lg:h-[500px] mt-[-50px] lg:mt-[-100px] z-10">
-                        <div className="w-full h-full rounded-[50%] overflow-hidden border-4 border-white/20 shadow-2xl relative">
-                            <div className="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-500">
-                                {/* Placeholder for Model Face */}
-                                <span className="text-6xl">👩</span>
+                    {/* Central Oval Image - Overlapping text */}
+                    <div className="relative z-10 mb-8 mt-4 lg:mt-0">
+                        <div className="w-64 h-80 lg:w-[420px] lg:h-[580px] rounded-[50%] overflow-hidden border-[6px] border-white/20 shadow-2xl relative mx-auto">
+                            <div className="absolute inset-0 bg-[#E5E5E5] flex items-center justify-center">
+                                <Image
+                                    src="/model1.jpg"
+                                    alt="Woman applying face cream"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
 
-                    <div className="absolute top-1/2 left-0 transform -translate-y-1/2 hidden lg:block max-w-xs text-left">
-                        <p className="text-lg font-sans font-light text-white/90 mb-8 animate-fade-in-up delay-100 leading-relaxed">
+                    {/* Left Text Content - Absolute positioned on desktop */}
+                    <div className="relative z-20 lg:absolute lg:bottom-32 lg:left-0 text-left max-w-sm">
+                        <p className="text-lg font-sans font-light text-white/90 mb-8 leading-relaxed drop-shadow-sm">
                             Discover skincare products crafted with pure, natural ingredients. Elevate your beauty routine with solutions designed to nourish, protect, and renew your skin.
                         </p>
-                        <button className="bg-fabish-lime text-fabish-text px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-lime-500/20">
+                        <button className="bg-fabish-lime text-fabish-text px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-xl shadow-lime-500/20 text-sm tracking-wide uppercase">
                             Shop Now
                         </button>
                     </div>
 
-                    {/* Right Side Image Arc */}
-                    <div className="absolute top-1/2 right-0 transform -translate-y-1/2 hidden lg:block w-64 h-96">
-                        <div className="w-full h-full rounded-t-[100px] overflow-hidden border-4 border-white/20 relative">
-                            <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400">
-                                <span className="text-4xl">🧴</span>
-                                <div className="absolute bottom-4 left-0 right-0 text-center">
-                                    <span className="bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-xs">Beauty Product</span>
-                                </div>
+                    {/* Right Side Image Arc - Absolute positioned on desktop */}
+                    <div className="relative z-20 lg:absolute lg:bottom-0 lg:right-0 mt-12 lg:mt-0">
+                        <div className="w-64 h-80 lg:w-72 lg:h-[450px] rounded-t-[10rem] overflow-hidden border-4 border-white/20 relative mx-auto bg-fabish-cream/10 backdrop-blur-sm shadow-xl">
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <Image
+                                    src="/hero_skincare_product.svg"
+                                    alt="Skincare Products"
+                                    fill
+                                    className="object-contain p-8 drop-shadow-xl"
+                                />
+                            </div>
+                            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-full text-center">
+                                <span className="bg-white/30 backdrop-blur-md px-6 py-2 rounded-full text-xs font-bold border border-white/40 shadow-sm text-fabish-text">
+                                    Beauty Product
+                                </span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                {/* Mobile specific layout adjustments */}
-                <div className="lg:hidden text-center mt-8">
-                    <p className="text-base font-sans font-light text-white/90 mb-6 px-4">
-                        Discover skincare products crafted with pure, natural ingredients.
-                    </p>
-                    <button className="bg-fabish-lime text-fabish-text px-8 py-3 rounded-full font-bold shadow-lg">
-                        Shop Now
-                    </button>
                 </div>
             </div>
         </section>

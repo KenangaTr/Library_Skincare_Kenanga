@@ -23,9 +23,19 @@ export default async function StarProducts() {
             <RenderingBadge mode="ISR" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-end mb-12">
-                    <h2 className="text-4xl font-serif text-fabish-text">Shop by product</h2>
+                <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div>
+                        <h2 className="text-4xl font-serif text-fabish-text mb-4">Shop by product</h2>
 
+                        {/* Tabs */}
+                        <div className="flex space-x-6 text-sm font-medium text-gray-400">
+                            <button className="text-fabish-green border-b-2 border-fabish-green pb-1">New Arrival</button>
+                            <button className="hover:text-fabish-green transition-colors">Most Popular</button>
+                            <button className="hover:text-fabish-green transition-colors">Best Selling</button>
+                        </div>
+                    </div>
+
+                    {/* Arrow Buttons */}
                     <div className="flex space-x-4">
                         <button className="w-12 h-12 rounded-full border border-fabish-text/10 flex items-center justify-center text-fabish-text hover:bg-fabish-green hover:text-white transition-all group">
                             <ArrowRight className="w-5 h-5 rotate-180 group-hover:scale-110 transition-transform" />

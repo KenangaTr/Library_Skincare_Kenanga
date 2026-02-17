@@ -28,16 +28,19 @@ export default async function SkinFirst() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Left: Large Feature */}
-                    <div className="bg-fabish-green/5 rounded-[3rem] overflow-hidden relative min-h-[500px] group border border-fabish-green/10">
-                        <div className="absolute inset-0 flex items-center justify-center p-12">
-                            {/* Placeholder for Large Product Image (Mild Cleanser) */}
-                            <div className="w-full h-full bg-white/50 rounded-3xl flex items-center justify-center border border-white">
-                                <span className="text-9xl">🌿</span>
+                    <div className="relative h-[600px] w-full">
+                        <div className="absolute inset-0 rounded-t-[15rem] rounded-b-[2rem] overflow-hidden border-8 border-white/20 shadow-2xl">
+                            <div className="absolute inset-0 bg-gray-200">
+                                {/* Model Placeholder Reuse */}
+                                <div className="w-full h-full flex items-center justify-center bg-[#E5E5E5] text-9xl">
+                                    👩
+                                </div>
                             </div>
-                        </div>
-                        <div className="absolute bottom-8 left-8">
-                            <h3 className="text-2xl font-serif font-bold text-fabish-text">Mild Cleanser</h3>
-                            <p className="text-fabish-text/60 text-sm mb-4">Green Tea</p>
+                            {/* Overlay Text */}
+                            <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/50 to-transparent text-white">
+                                <h3 className="text-3xl font-serif font-bold">Natural Beauty</h3>
+                                <p className="text-white/80 text-sm">Embrace your glow</p>
+                            </div>
                         </div>
                     </div>
 
