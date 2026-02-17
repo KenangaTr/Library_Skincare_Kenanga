@@ -3,17 +3,17 @@ import RenderingBadge from "./RenderingBadge";
 
 export default function Hero() {
     return (
-        <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-fabish-pink text-fabish-text min-h-screen flex items-center rounded-b-[4rem]">
+        <section className="relative pt-24 pb-20 lg:pt-28 lg:pb-32 overflow-hidden bg-fabish-pink text-fabish-text min-h-screen flex items-center rounded-b-[4rem]">
             <RenderingBadge mode="SSG" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
                 <div className="text-center relative flex flex-col items-center">
                     {/* Main Title - Layered behind image significantly */}
-                    <div className="relative z-0 mb-[-60px] lg:mb-[-140px] select-none pointer-events-none">
-                        <h1 className="text-6xl lg:text-[11rem] font-serif font-medium leading-[0.8] tracking-tighter text-white">
+                    <div className="relative z-20 mb-[-40px] lg:mb-[-100px] select-none pointer-events-none">
+                        <h1 className="text-6xl lg:text-9xl font-serif font-light leading-tight tracking-tight text-white/90 drop-shadow-md relative left-0 lg:-left-24">
                             Unlock Your <br />
                         </h1>
-                        <h1 className="text-6xl lg:text-[11rem] font-serif font-medium leading-[0.8] tracking-tighter text-white italic relative left-12 lg:left-36">
+                        <h1 className="text-6xl lg:text-9xl font-serif font-light leading-tight tracking-tight text-white italic relative left-8 lg:left-12 drop-shadow-md">
                             Natural Glow
                         </h1>
                     </div>
