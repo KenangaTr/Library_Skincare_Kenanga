@@ -1,13 +1,14 @@
 import RenderingBadge from "./RenderingBadge";
 import { ArrowRight, Star } from "lucide-react";
+import Image from "next/image";
 
 async function getFeaturedProducts() {
     // Simulate fetch
     return [
-        { id: 1, name: "HydraRepair Cream", price: 80, image: "🧴", tag: "Silky Strands Tags" },
-        { id: 2, name: "Clear Glow Toner", price: 70, image: "💧", tag: "Silky Strands Tags" },
-        { id: 3, name: "Revitalizing Serum", price: 99, image: "✨", tag: "Silky Strands Tags" },
-        { id: 4, name: "UltraCalm Mask", price: 80, image: "🍃", tag: "Silky Strands Tags" },
+        { id: 1, name: "HydraRepair Cream", price: 80, image: "/RepairCream.jpg", tag: "Silky Strands Tags" },
+        { id: 2, name: "Clear Glow Toner", price: 70, image: "/toner.jpg", tag: "Silky Strands Tags" },
+        { id: 3, name: "Revitalizing Serum", price: 99, image: "/serum2.jpg", tag: "Silky Strands Tags" },
+        { id: 4, name: "UltraCalm Mask", price: 80, image: "/mask.jpg", tag: "Silky Strands Tags" },
     ];
 }
 
@@ -31,10 +32,12 @@ export default async function SkinFirst() {
                     <div className="relative h-[600px] w-full">
                         <div className="absolute inset-0 rounded-t-[15rem] rounded-b-[2rem] overflow-hidden border-8 border-white/20 shadow-2xl">
                             <div className="absolute inset-0 bg-gray-200">
-                                {/* Model Placeholder Reuse */}
-                                <div className="w-full h-full flex items-center justify-center bg-[#E5E5E5] text-9xl">
-                                    👩
-                                </div>
+                                <Image
+                                    src="/model3.png"
+                                    alt="Natural Beauty Model"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                             {/* Overlay Text */}
                             <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/50 to-transparent text-white">
@@ -48,8 +51,13 @@ export default async function SkinFirst() {
                     <div className="grid grid-cols-2 gap-6">
                         {gridProducts.map((p) => (
                             <div key={p.id} className="bg-fabish-cream rounded-3xl p-6 text-center hover:shadow-lg transition-shadow border border-transparent hover:border-fabish-lime/30 group">
-                                <div className="h-32 mb-4 bg-white rounded-2xl flex items-center justify-center text-4xl group-hover:scale-105 transition-transform">
-                                    {p.image}
+                                <div className="h-32 mb-4 bg-white rounded-2xl flex items-center justify-center overflow-hidden relative group-hover:scale-105 transition-transform">
+                                    <Image
+                                        src={p.image}
+                                        alt={p.name}
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
                                 <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">{p.tag}</p>
                                 <h4 className="font-serif font-bold text-fabish-text text-sm mb-1">{p.name}</h4>
