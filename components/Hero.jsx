@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import RenderingBadge from "./RenderingBadge";
 
 export default function Hero() {
@@ -38,9 +39,9 @@ export default function Hero() {
                         <p className="text-lg font-sans font-light text-white/90 mb-8 leading-relaxed drop-shadow-sm">
                             Discover skincare products crafted with pure, natural ingredients. Elevate your beauty routine with solutions designed to nourish, protect, and renew your skin.
                         </p>
-                        <button className="bg-brand-pink text-fabish-text px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-xl shadow-lime-500/20 text-sm tracking-wide uppercase">
+                        <Link href="/shop" className="bg-brand-pink text-fabish-text px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-xl shadow-lime-500/20 text-sm tracking-wide uppercase inline-block">
                             Shop Now
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Right Side Image Arc - Absolute positioned on desktop */}
