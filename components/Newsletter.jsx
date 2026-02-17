@@ -35,7 +35,7 @@ export default function Newsletter() {
                         Personalized skincare solutions for verified results.
                         Find the answer to your skincare concerns.
                     </p>
-                    <Link href="/shop" className="bg-[#F48FB1] text-[#0F2F18] px-8 py-3 rounded-full font-bold hover:bg-pink-400 transition-colors inline-block shadow-lg shadow-pink-200">
+                    <Link href="/shop" className="bg-[#F48FB1] text-[#0F2F18] px-8 py-3 rounded-full font-bold hover:bg-pink-400 transition-colors inline-block shadow-[0_4px_14px_0_rgb(255,255,255)]">
                         Shop Now
                     </Link>
                 </div>
