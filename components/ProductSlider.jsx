@@ -34,13 +34,13 @@ export default function ProductSlider({ products }) {
                 <div className="flex space-x-4">
                     <button
                         onClick={() => scroll("left")}
-                        className="w-12 h-12 rounded-full bg-brand-pink flex items-center justify-center text-white hover:bg-fabish-pink hover:text-fabish-text transition-all shadow-lg shadow-fabish-green/30 group"
+                        className="w-12 h-12 rounded-full bg-brand-pink flex items-center justify-center text-white hover:bg-fabish-pink hover:text-fabish-text transition-all shadow-[0_4px_14px_0_rgba(255,255,255,0.6)] group"
                     >
                         <ArrowRight className="w-5 h-5 rotate-180 group-hover:scale-110 transition-transform" />
                     </button>
                     <button
                         onClick={() => scroll("right")}
-                        className="w-12 h-12 rounded-full bg-brand-pink flex items-center justify-center text-white hover:bg-fabish-pink hover:text-fabish-text transition-all shadow-lg shadow-fabish-green/30 group"
+                        className="w-12 h-12 rounded-full bg-brand-pink flex items-center justify-center text-white hover:bg-fabish-pink hover:text-fabish-text transition-all shadow-[0_4px_14px_0_rgba(255,255,255,0.6)] group"
                     >
                         <ArrowRight className="w-5 h-5 group-hover:scale-110 transition-transform" />
                     </button>

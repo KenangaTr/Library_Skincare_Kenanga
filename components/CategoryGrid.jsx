@@ -12,7 +12,7 @@ export default function CategoryGrid() {
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-serif text-fabish-text mb-2">Shop by Category</h2>
                     <p className="text-gray-500 max-w-md mx-auto">Explore our full range of skincare products, each formulated to address different skin concerns.</p>
-                    <Link href="/shop" className="mt-6 bg-[#FFC0CB] text-fabish-text px-6 py-2 rounded-full font-bold text-sm hover:bg-pink-300 transition-colors inline-block border border-fabish-text/10 shadow-lg shadow-fabish-green/10">
+                    <Link href="/shop" className="mt-6 bg-[#FFC0CB] text-fabish-text px-6 py-2 rounded-full font-bold text-sm hover:bg-pink-300 transition-colors inline-block border border-fabish-text/10 shadow-[0_4px_14px_0_rgba(255,255,255,0.6)]">
                         Explore Now
                     </Link>
                 </div>

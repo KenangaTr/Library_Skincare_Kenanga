@@ -39,7 +39,7 @@ export default function Hero() {
                         <p className="text-lg font-sans font-light text-white/90 mb-8 leading-relaxed drop-shadow-sm">
                             Discover skincare products crafted with pure, natural ingredients. Elevate your beauty routine with solutions designed to nourish, protect, and renew your skin.
                         </p>
-                        <Link href="/shop" className="bg-brand-pink text-fabish-text px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-xl shadow-lime-500/20 text-sm tracking-wide uppercase inline-block">
+                        <Link href="/shop" className="bg-brand-pink text-fabish-text px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-[0_4px_14px_0_rgba(255,255,255,0.5)] text-sm tracking-wide uppercase inline-block">
                             Shop Now
                         </Link>
                     </div>

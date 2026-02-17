@@ -62,7 +62,7 @@ export default function Features() {
                             </li>
                         </ul>
 
-                        <button className="bg-brand-pink text-fabish-text px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-lime-500/20">
+                        <button className="bg-brand-pink text-fabish-text px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-[0_4px_14px_0_rgba(255,255,255,0.5)]">
                             Learn More
                         </button>
                     </div>
