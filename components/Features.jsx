@@ -25,7 +25,7 @@ export default function Features() {
                         {/* Bottom Image - Replaces Video Placeholder */}
                         <div className="h-64 rounded-[4rem] w-full overflow-hidden relative border-4 border-white shadow-xl">
                             <Image
-                                src="/model2.jpg"
+                                src="/MODEL3.png"
                                 alt="KennyLabs Skincare Model"
                                 fill
                                 className="object-cover"

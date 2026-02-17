@@ -45,7 +45,7 @@ export default function Newsletter() {
                     <div className="relative w-64 h-80 bg-gray-300 rounded-[3rem] overflow-hidden border-4 border-white/20 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
                         <div className="absolute inset-0 bg-gray-200">
                             <Image
-                                src="/model4.jpg"
+                                src="/MODEL5.png"
                                 alt="Newsletter Model"
                                 fill
                                 className="object-cover"
