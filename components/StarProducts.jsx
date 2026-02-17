@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import RenderingBadge from "./RenderingBadge";
 import { ArrowRight, Star } from "lucide-react";
 
@@ -76,9 +77,9 @@ export default async function StarProducts() {
 
                     {/* View All Card */}
                     <div className="min-w-[200px] snap-center flex items-center justify-center">
-                        <a href="#" className="w-32 h-32 rounded-full border border-fabish-text/20 flex items-center justify-center hover:bg-fabish-text hover:text-white transition-all group">
+                        <Link href="/shop" className="w-32 h-32 rounded-full border border-fabish-text/20 flex items-center justify-center hover:bg-fabish-text hover:text-white transition-all group">
                             <span className="font-serif italic text-lg group-hover:scale-110 transition-transform">View All</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
